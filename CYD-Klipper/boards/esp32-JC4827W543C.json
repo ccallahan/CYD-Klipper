@@ -6,7 +6,8 @@
     "build": {
       "arduino": {
         "ldscript": "esp32s3_out.ld",
-        "memory_type": "qio_opi"
+        "memory_type": "qio_opi",
+        "partitions": "default_16MB.csv"
       },
       "core":     "esp32",
       "mcu":      "esp32s3",
@@ -52,7 +53,7 @@
     },
   
     "upload": {
-      "flash_size": "4MB",
+      "flash_size": "16MB",
       "flash_mode": "qio",
       "maximum_ram_size": 327680,
       "maximum_size": 16777216,
